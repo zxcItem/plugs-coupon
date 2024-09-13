@@ -19,7 +19,7 @@
     "extra": {
         "config": {
             "type": "plugin",
-            "name": "卡券管理",
+            "name": "优惠券管理",
             "cover": "layui-icon layui-icon-tabs",
             "description": "卡券模块，包含：通用券,商品券,使用记录"
         },
