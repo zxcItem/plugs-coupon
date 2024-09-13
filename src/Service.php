@@ -9,7 +9,7 @@ use think\admin\Plugin;
 /**
  * 组件注册服务
  * @class Service
- * @package app\sign
+ * @package app\coupon
  */
 class Service extends Plugin
 {
