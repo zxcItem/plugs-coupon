@@ -1,0 +1,43 @@
+{
+    "type": "think-admin-plugin",
+    "name": "xiaochao/plugs-coupon",
+    "version": "dev-master",
+    "authors": [
+        {
+            "name": "叶落无痕",
+            "email": "zxcaile@foxmail.com"
+        }
+    ],
+    "require": {
+        "php": ">7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "plugin\\coupon\\": "src"
+        }
+    },
+    "extra": {
+        "config": {
+            "type": "plugin",
+            "name": "卡券管理",
+            "cover": "layui-icon layui-icon-tabs",
+            "description": "卡券模块，包含：通用券,商品券,使用记录"
+        },
+        "think": {
+            "services": [
+                "plugin\\coupon\\Service"
+            ]
+        },
+        "plugin": {
+            "copy": {
+                "stc/database": "database/migrations"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "zoujingli/think-install": true
+        }
+    }
+}
