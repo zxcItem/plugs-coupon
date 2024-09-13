@@ -57,7 +57,7 @@ class Coupon extends Auth
     {
         try {
             $data = $this->_vali(['coid.require' => '卡券为空！']);
-            $coupon = UserCoupon::create($this->relation, intval($data['coid']));
+            $coupon = UserCoupon::create($this->unid, intval($data['coid']));
             $this->success('领取成功！', $coupon->toArray());
         } catch (HttpResponseException $exception) {
             throw $exception;

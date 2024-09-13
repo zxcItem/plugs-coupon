@@ -5,7 +5,7 @@ declare (strict_types=1);
 
 namespace plugin\coupon\model;
 
-use plugin\account\model\Abs;
+use plugin\shop\model\AbsUser;
 use think\model\relation\HasOne;
 
 /**
@@ -13,7 +13,7 @@ use think\model\relation\HasOne;
  * @class PluginCouponUserCoupon
  * @package plugin\coupon\model
  */
-class PluginCouponUserCoupon extends Abs
+class PluginCouponUserCoupon extends AbsUser
 {
 
     /**
@@ -51,7 +51,7 @@ class PluginCouponUserCoupon extends Abs
     {
         $data = parent::toArray();
         if (isset($data['type'])) {
-            $data['type_name'] = PluginWemallConfigCoupon::types[$data['type']] ?? $data['type'];
+            $data['type_name'] = PluginCouponConfigCoupon::types[$data['type']] ?? $data['type'];
         }
         return $data;
     }
