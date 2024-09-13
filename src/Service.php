@@ -39,6 +39,7 @@ class Service extends Plugin
             [
                 'name' => '卡券管理',
                 'subs' => [
+                    ['name' => '卡券配置管理', 'icon' => 'layui-icon layui-icon-set', 'node' => "{$code}/coupon.config/index"],
                     ['name' => '会员卡券管理', 'icon' => 'layui-icon layui-icon-table', 'node' => "{$code}/coupon/index"],
                 ],
             ]

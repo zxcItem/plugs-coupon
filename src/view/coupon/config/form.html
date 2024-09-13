@@ -60,7 +60,7 @@
             </div>
             <!--{/notempty}-->
         </div>
-
+        <!--{notempty name='levels'}-->
         <div class="layui-form-item">
             <span class="help-label label-required-prev"><b>使用等级限制</b>Enable Levels</span>
             <div class="layui-textarea help-checks layui-bg-gray">
@@ -76,7 +76,7 @@
                 {/foreach}
             </div>
         </div>
-
+        <!--{/notempty}-->
         <div class="flex flex-wrap">
             <label class="layui-form-item ta-mr-15">
                 <span class="help-label label-required-prev nowrap"><b>卡券面值</b>Coupon Amount</span>
@@ -149,7 +149,7 @@
                     },
                     // 商品选择器
                     choose() {
-                        $.form.modal('{:url("shop.goods/select")}')
+                        $.form.modal('{:url("plugin-shop/shop.goods/select")}')
                         window.setItemValue = (data) => {
                             if (app.list.some(x => x.code === data.code)) {
                                 $.msg.error('该商品已存在！')

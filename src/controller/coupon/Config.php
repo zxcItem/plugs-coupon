@@ -67,8 +67,8 @@ class Config extends Controller
     {
         if ($this->request->isGet()) {
             $this->types = PluginCouponConfigCoupon::types;
-            $this->levels = PluginWemallConfigLevel::items();
-            array_unshift($this->levels, ['name' => '全部', 'number' => '-']);
+//            $this->levels = PluginWemallConfigLevel::items();
+//            array_unshift($this->levels, ['name' => '全部', 'number' => '-']);
         } else {
             $data['levels'] = arr2str($data['levels'] ?? []);
         }
