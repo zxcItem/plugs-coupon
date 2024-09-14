@@ -32,7 +32,7 @@ class InstallCoupon extends Migrator
     }
 
     /**
-     * 创建数据对象
+     * 商城-配置-卡券
      * @class PluginCouponConfigCoupon
      * @table plugin_coupon_config_coupon
      * @return void
@@ -81,7 +81,7 @@ class InstallCoupon extends Migrator
     }
 
     /**
-     * 创建数据对象
+     * 商城-用户-卡券
      * @class PluginCouponUserCoupon
      * @table plugin_coupon_user_coupon
      * @return void

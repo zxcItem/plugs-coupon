@@ -7,7 +7,6 @@ namespace plugin\coupon\service;
 
 use plugin\coupon\model\PluginCouponConfigCoupon;
 use plugin\coupon\model\PluginCouponUserCoupon;
-//use plugin\wemall\model\PluginWemallUserRelation;
 use think\admin\Exception;
 use think\admin\extend\CodeExtend;
 

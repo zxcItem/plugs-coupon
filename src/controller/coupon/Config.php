@@ -1,12 +1,10 @@
 <?php
 
-
 declare (strict_types=1);
 
 namespace plugin\coupon\controller\coupon;
 
 use plugin\coupon\model\PluginCouponConfigCoupon;
-use plugin\wemall\model\PluginWemallConfigLevel;
 use think\admin\Controller;
 use think\admin\helper\QueryHelper;
 
